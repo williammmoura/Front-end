@@ -1,33 +1,31 @@
 header{
     background-color: rgb(122, 81, 24);
 }
-h1{
+
+h1, h4, h2{
     color: rgb(233, 233, 233);
     text-align: center; 
 }
-h4{
-    color: rgb(233, 233, 233);
-    text-align: center;
-}
-
-
-main{
-    background-color: rgb(55, 41, 41);
-    margin-bottom: 2%;
-    margin-right: 2%;
-    margin-left: 2%;
-}
-
 
 body{
     background-color: rgb(55, 41, 41);
+    margin-right: auto;
+    margin-left: auto;
 }
-
 
 #sumario{
     color: rgb(233, 233, 233);
 }
 
+span{
+    color:aliceblue
+}
+
+main{
+    margin-bottom: 2%;
+    margin-right: 4%;
+    margin-left: 4%;
+}
 
 section{
     text-align: justify;
@@ -38,17 +36,14 @@ section{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
 }
 
-
 p{
     text-indent: 3%;
 }
 
-
-h3{
+.titulolivro{
     font-variant: small-caps;
     text-align: center;
 }
-
 
 img{
     height: 15%;
@@ -58,39 +53,19 @@ img{
     margin-right: auto;
 }
 
-
 table{
     margin: auto;
 }
 th, td{
-    border: 2px solid black
+    color: aliceblue;
+    background-color: rgb(122, 81, 24);
 }
 
-
-#links, #imglink{
-    height: 20%;
-    width: 20%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-#imglink2{
-    height: 10%;
-    width: 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.logos{
+    height: 3%;
+    width: 3%;
 }
 #desenvolvido{
     color: aliceblue;
     text-align: center;
-    font-size: 10;
-}
-#logo{
-    height: 15%;
-    width: 15%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
 }
