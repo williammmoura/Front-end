@@ -1,6 +1,9 @@
 /*Isso é um comentário no CSS*/
 header{
     background-color: rgb(122, 81, 24);
+    padding: auto;
+    margin-bottom: 0%;
+    border-radius: 10px;
 }
 
 h1, h4, h2{
@@ -18,6 +21,25 @@ body{
 
 #sumario{
     color: rgb(233, 233, 233);
+    padding: 4%;
+    margin-bottom: 3%;
+}
+
+/*Formatação dos links*/
+a:link{
+    color:aliceblue
+}
+
+a:visited{
+    color: bisque;
+}
+
+a:hover{
+    color: antiquewhite;
+}
+
+a:active{
+    color: bisque;
 }
 
 span{
@@ -37,6 +59,7 @@ section{
     margin-bottom: 2%;
     background-color: rgb(158, 149, 126);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
 }
 
 p{
@@ -54,6 +77,7 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
 }
 
 /*Tabela*/
@@ -64,6 +88,7 @@ th, td{
     border-width: 3px;
     border-style: solid;/*solido*/
     border-color: burlywood;
+    border-radius: 10px;
     color: aliceblue;
     text-align: center;
     padding: 1%;
