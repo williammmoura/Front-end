@@ -1,0 +1,87 @@
+/* Tipos de bordas -> CSS */
+
+#p1{
+    border-style: dashed;
+    border-color: rgb(255, 0, 0);
+}
+
+#p2{
+    border-style: double;
+    border-color: aqua;
+}
+
+#p3{
+    border-style: ridge;
+    border-color: rgb(255, 255, 0);
+}
+
+#p4{
+    border-style: inset;
+    border-color: #edafeb;
+}
+
+#p5{
+    border-style: groove;
+}
+
+#p6{
+    border-style: dotted;
+}
+
+#p7{
+    border-style: outset;
+}
+
+/*Div com borda arredondada*/
+#div1{
+    width: 110px;
+    height: 110px;
+    border: solid;
+    border-radius: 20px;
+}
+
+/*Div com gradiente (mais prático com hexadecimal)*/
+#divGrad{
+    color: white;
+    width: 110px;
+    height: 110px;
+    border: solid;
+    border-radius: 20px;
+    background-color: red;
+    background-image:linear-gradient(0deg, red, white)/*ângulo,cor,cor2*/
+}
+
+/*Botão*/
+#start{
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 15px 32px;/*superior e inferior*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*Exemplo de coluna (class)*/
+.exColuna{
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 2px solid lightblue;/*width, solid, color*/    
+}
+
+/*Transições*/
+#verde{
+    width: 140px;
+    height: 140px;
+    background-color: green;
+    transition: width 2s, heigth 4s; /*Tempo de animação*/
+}
+
+#verde:hover{
+    width: 300px;
+    height: 300px;
+}
+
