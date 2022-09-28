@@ -85,3 +85,30 @@
     height: 300px;
 }
 
+/*Animacao*/
+
+
+
+/*tooltip*/
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tootip, .tooltiptext{
+    visibility: hidden; /*inicialmente não aparece.*/
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;/*um pouco a frente do texto (uma camada acima).*/
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
