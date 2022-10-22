@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Programa em JavaScript</title>
+    
+    <script type="text/javascript" src="02_aula_js.js"></script>
+
+    <!--JavaScript-->
+    <script type="text/javascript">
+        /*function mudarParagrafo(){
+            document.getElementById("p1").innerHTML = `Este paragrafo foi modificado.`;
+        }*/
+    </script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <p id="p1">Isto é um parágrafo</p>
+        <button type="button" onclick="mudarParagrafo()">Clique aqui!</button>
+
+        <p id="p2"> </p>
+        <script type="text/javascript">
+            document.getElementById("p2").innerHTML = 5 + 6;
+        </script>
+
+        <p>Testando o "documento.write"</p>
+        <script type="text/javascript">
+            document.write(`5 + 6`);
+        </script>
+
+        <p>Testando o "document.write" (dentro de um botão)</p>
+        <button type="button" onclick="document.write(5 + 6)">Clique Aqui!</button>
+        
+        <p>Tetando o "window.alert()"</p>
+        <script type="text/javascript">
+            window.alert(5+6);
+        </script>
+
+        <p>Testando "console.log()"</p>
+        <script type="text/javascript">
+            console.log(5 + 6);
+        </script>
+
+        <script type="text/javascript">
+            document.write(1 + 2);
+            document.write(3 + 4);
+            document.write(5 + 6);
+        </script>
+
+        <p>Testando COM espaço em branco</p>
+        <script type="text/javascript">
+            document.write("Com espaço");
+        </script>
+
+        <p>Testando SEM espaço em branco</p>
+        <script type="text/javascript">
+            document.write( "Sem espaço" );
+        </script>
+
+        <p>Valores Literais</p>
+        <script type="text/javascript">
+            document.write(100);
+            document.write(10.1);
+            document.write(`Eu sou literal.`);
+            document.write(`Eu também sou literal.`);
+        </script>
+
+        <p>Valores Variáveis</p>
+        <script type="text/javascript">
+            let numero1 = 15;
+
+            let numero2;
+            numero2 = 21;
+
+            let soma = numero1 + numero2;
+            console.log(soma); 
+        </script>
+
+        <p>Nomes e Identificadores</p>
+        <script>
+            //Precisa iniciar com letras do alfabeto (a-z);
+            //Pode iniciar com cifrão;
+            //Pode utilizar "underline" no inicio;
+            //Não pode iniciar com números;
+            //Nãp pode utilizar hifen ou operadores aritméticos;
+            //Não pode usar pontuação e acentuação;
+            //Não pode ter espaçamento;
+
+            let nome = "Ana";
+            let primeiro_nome = "Ana"; //Usando "underline"
+            let primeiroNome = "Ana"; //Lower Camel Case
+            //Variáveis diferentes!!!
+            let primeronome = "Bento" 
+
+            let PrimeiroNome = 'Carol'; //Upper Camel Case
+            
+        </script>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
