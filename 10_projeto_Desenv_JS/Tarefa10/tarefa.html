@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa de Casa - Aula 09</title>
+</head>
+<body>
+    <h1>Tarefa de Casa - Aula 9</h1>
+	
+    <!--Equação 01-->
+    <section>
+        <button onclick="calcularEq01()">Calcular Equação 01</button>
+        <p id="res01">6 + 20 - 12 x 2 = </p>
+        <script type="text/javascript">
+            function calcularEq01(){
+                let equacao01 = 6 + 20 - 12 * 2;
+                let resultado01 = window.document.getElementById("res01");
+                resultado01.innerHTML =`<p>6 + 20 - 12 x 2 = ${equacao01}</p>`;
+            }
+        </script>
+    </section>
+
+    <!--Equação 02-->
+    <section>
+        <button onclick="calcularEq02()">Calcular Equação 02</button>
+        <p id="res02">30 ÷ [10 + (2 + 3)] = </p>
+        <script type="text/javascript">
+            function calcularEq02(){
+                let equacao02 = 30 /(10 + (2 + 3));
+                let resultado02 = window.document.getElementById("res02");
+                resultado02.innerHTML =`<p>30 ÷ [10 + (2 + 3)] = ${equacao02}</p>`;
+            }
+        </script>
+    </section>
+
+    <section>
+        <button onclick="calcularEq03()">Calcular Equação 03</button>
+        <p id="res03">[(18 + 3 · 2) ÷ 8 + 5 · 3] ÷ 6 = </p>
+        <script>
+            function calcularEq03(){
+                let equacao03 = ((18 + 3 * 2)/8 + 5 * 3)/6;
+                let resultado03 = window.document.getElementById("res03");
+                resultado03.innerHTML =`<p>[(18 + 3 · 2) ÷ 8 + 5 · 3] ÷ 6 = ${equacao03}</p>`;
+            }
+        </script>
+    </section>
+
+    <section>
+        <button onclick="calcularEq04()">Calcular Equação 04</button>
+        <p id="res04">[(64 - 16·4) + (48·10 - 180)]·5 = </p>
+        <script>
+            function calcularEq04(){
+                let equacao04 = ((64 - 16*4) + (48*10 - 180))*5;
+                let resultado04 = window.document.getElementById("res04");
+                resultado04.innerHTML =`<p>[(64 - 16·4) + (48·10 - 180)]·5 = ${equacao04}</p>`;
+            }
+        </script>
+    </section>
+
+    <section>
+        <button onclick="calcularEq05()">Calcular Equacao 05</button>
+        <p id="res05">{[(8 · 4 + 3) ÷ 7 + (3 + 15 ÷ 5) · 3] · 2 - (19 - 7) ÷ 6} · 2 + 12 = </p>
+        <script>
+            function calcularEq05(){
+                let equacao05 = (((8 * 4 + 3)/7 + (3 + 15/5) * 3) * 2 - (19 - 7)/6) * 2 + 12;
+                let resultado05 = window.document.getElementById("res05");
+                resultado05.innerHTML = `<p>{[(8 · 4 + 3) ÷ 7 + (3 + 15 ÷ 5) · 3] · 2 - (19 - 7) ÷ 6} · 2 + 12 = ${equacao05}</p>`
+            }
+        </script>
+    </section>
+</body>
+</html>
