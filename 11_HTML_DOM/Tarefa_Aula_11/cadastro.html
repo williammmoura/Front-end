@@ -5,40 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <title>PetShop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hora do Banho PetShop</title>
 </head>
 <body>
-    <header>
-        <h1>Cadastro PetShop</h1>
-    </header>
-    <div class="container">
-        <form name="cadastrar">
-            <div class="row">
-                <div class="col">
-                    <label for="formGroupExampleInput" class="form-label">Nome do Cachorro</label>
-                    <input type="text" class="form-control">
+
+    <!--Formulário Responsivo-->
+   <div class="container">
+        <div class="form-image">
+            <img src="assets/img/ilustra_imgem.svg" alt="ilustraçao">
+        </div>
+        <div class="form">
+            <form name="agendar" onsubmit="event.preventDefault()">
+                <div class="header">
+                    <h1>Agenda - Hora Do Banho PetShop</h1>
                 </div>
-                <div class="col">
-                    <label for="formGroupExampleInput" class="form-label">Nome do Dono</label>
-                    <input type="text" class="form-control">
+                <div class="form-dados">
+                    <!--Nome tutor-->
+                    <div class="input-box">
+                        <label for="nomeDono">Nome do Tutor:</label>
+                        <input type="text" id="nomeDono" name="nomeDono" placeholder="Seu nome" required>
+                    </div>
+                    <!--Telene-->
+                    <div class="input-box">
+                        <label for="tel">Telefone:</label>
+                        <input type="tel" id="tel" name="tel" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+                    <!--Nome cachorro-->
+                    <div class="input-box">
+                        <label for="nomeCachorro">Nome do Cachorro:</label>
+                        <input type="text" id="nomeCachorro" name="nomeCachorro" placeholder="Nome do cachorro" required>
+                    </div>
+                    <!--Dia-->
+                    <div class="input-box">
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data" placeholder="dd/mm/aaaa" required>
+                    </div>
+                    <!--Horario-->
+                    <div class="input-box">
+                        <label for="hora">Horário:</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="obs">Observação:</label>
+                        <textarea name="observacao" id="observacao" cols="20" rows="5"></textarea>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label for="formGroupExampleInput" class="form-label">Telefone para Contato</label>
-                    <input type="tel" class="form-control">
+                <div class="agendar-button">
+                    <button type="button" onclick="insere()">Agendar</button>
                 </div>
-                <div class="col">
-                    <label for="formGroupExampleInput" class="form-label">Dia do agendamento</label>
-                    <input type="date" class="form-control">
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-    <button type="button" class="btn btn-success">Cadastrar</button>
-    
-    <!--Javascript-->
-    <script src="js/bootstrap.js"></script>
+
+    <!--Tabela Responsiva-->
+    <div class="container-table">
+        <table>
+            <caption>Agenda de Horários</caption>
+            <thead>
+                <tr>
+                    <th>Horario         </th>
+                    <th>Nome do Tutor   </th>
+                    <th>Nome do Cachorro</th>
+                    <th>Telefone        </th>
+                    <th>Data            </th>
+                    <th>Horário         </th>
+                    <th>Observação      </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="inserirTabela">
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="assets/js/script.js"></script>    
 </body>
 </html>
