@@ -18,37 +18,37 @@
         <div class="form">
             <form name="agendar" onsubmit="event.preventDefault()">
                 <div class="header">
-                    <h1>Agenda - Hora Do Banho PetShop</h1>
+                    <h1>Agenda - PetShop</h1>
                 </div>
                 <div class="form-dados">
                     <!--Nome tutor-->
                     <div class="input-box">
                         <label for="nomeDono">Nome do Tutor:</label>
-                        <input type="text" id="nomeDono" name="nomeDono" placeholder="Seu nome" required>
+                        <input type="text" id="nomeDono" name="nomeTutor" placeholder="Seu nome" required>
                     </div>
                     <!--Telene-->
                     <div class="input-box">
-                        <label for="tel">Telefone:</label>
-                        <input type="tel" id="tel" name="tel" placeholder="(xx) xxxx-xxxx" required>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telef" placeholder="(xx) xxxx-xxxx" required>
                     </div>
                     <!--Nome cachorro-->
                     <div class="input-box">
                         <label for="nomeCachorro">Nome do Cachorro:</label>
-                        <input type="text" id="nomeCachorro" name="nomeCachorro" placeholder="Nome do cachorro" required>
+                        <input type="text" id="nomeCachorro" name="nomeCao" placeholder="Nome do cachorro" required>
                     </div>
                     <!--Dia-->
                     <div class="input-box">
                         <label for="data">Data:</label>
-                        <input type="date" id="data" name="data" placeholder="dd/mm/aaaa" required>
+                        <input type="date" id="data" name="dataAgenda" placeholder="dd/mm/aaaa" required>
                     </div>
                     <!--Horario-->
                     <div class="input-box">
                         <label for="hora">Horário:</label>
-                        <input type="time" id="hora" name="hora" required>
+                        <input type="time" id="hora" name="horaMarcada" required>
                     </div>
                     <div class="input-box">
-                        <label for="obs">Observação:</label>
-                        <textarea name="observacao" id="observacao" cols="20" rows="5"></textarea>
+                        <label for="observacao">Observação:</label>
+                        <textarea name="obs" id="observacao" cols="20" rows="5"></textarea>
                     </div>
                 </div>
                 <div class="agendar-button">
@@ -80,6 +80,13 @@
             </tbody>
         </table>
     </div>
+
+    <footer id="footer">
+        <p id="copy">&copy;William Monte de Moura</p>
+        <img class="imgFooter" src="assets/img/Logo - WMM.png" alt="Logo_WMM"><br>
+        <a href="https://www.linkedin.com/in/williammontedemoura/"><img class="imgFooter" src="assets/img/Logo_linkedin.png" alt="Linkedin"></a>
+        <a href="https://github.com/williammmoura"><img class="imgFooter" src="assets/img/GitHub-Mark-Light-32px.png" alt="GitHub"></a>
+    </footer>
     <script src="assets/js/script.js"></script>    
 </body>
 </html>

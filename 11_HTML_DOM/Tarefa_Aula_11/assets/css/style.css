@@ -7,9 +7,9 @@
 
 body{
     width: 100%;
-    height: 90vh;
-    margin:  10% auto;
+    height: 100vh;
     display: flex;
+    margin: 50px auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -19,6 +19,7 @@ body{
 .container{
     width: 85%;
     height: 85vh;
+    margin: 10px 0px 0px 0px;
     display: flex;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.507);
 }
@@ -63,14 +64,14 @@ body{
 }
 .agendar-button button{
     border: none;
-    background-color: rgba(79, 30, 255, 0.723);
+    background-color: rgb(79, 30, 255);
     color: white;
     padding: 4px 2px;
     border-radius: 5px;
     cursor: pointer;
 }
 .agendar-button button:hover{
-    background-color: rgb(79, 30, 255);
+    background-color: rgba(79, 30, 255, 0.723);
 }
 
 /*Inputs*/
@@ -126,4 +127,23 @@ th, td{
 }
 tr:nth-child(even){
     background-color: aquamarine;
+}
+
+/*Footer*/
+#footer{
+    background-color: rgba(79, 30, 255, 0.723);
+    padding: 10px;
+    margin-top: 24px;
+    width: 100%;
+    text-align: center;
+}
+#copy{
+    color: white;
+    font: normal 14pt arial;
+    margin-bottom: 5px;
+}
+.imgFooter{
+    width: 30px;
+    text-align: center;
+    margin-top: 10px;
 }
