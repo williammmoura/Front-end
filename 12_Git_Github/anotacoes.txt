@@ -1,0 +1,26 @@
+Git e Github
+
+**Comandos Importantes:
+
+-pull (puxar): fazer download dos arquivos do repositório que foram modificados;
+
+-push (empurrar): fazer o upload para o repositório;
+
+-git clone: fazer uma cópia do repositório para a sua IDE;
+
+-* clonar branch: fazer uma ramificação para realizar alterações sem mudar o original;
+
+-*git branch: manipular as ramificação;
+**Comandos:
+    'git branch <nome-da-branch>'
+
+**Criar a branch e já enviar ao repositório ao mesmo tempo.
+    'git push -u <local-remoto><nome-da-branch>'
+
+**Deletar uma branch:
+    'git branch -d'
+
+**'git marge <nome-da-branch-com-o=recurso>'
+
+-git status: confere se precisamos fazer pull ou push;
+
