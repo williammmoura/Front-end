@@ -1,0 +1,37 @@
+.nav-background{
+    background-color: #5333ed;
+}
+
+.navbar{
+    display: flex;
+    /*position sticky*/;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+}
+
+.nav-list{
+    width: 50%;
+    display: flex;
+}
+
+.nav-list li{
+    text-decoration: none;
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.rightNav{
+    width: 50%;
+    text-align: right;
+}
