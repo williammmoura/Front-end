@@ -1,5 +1,7 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+const score = document.querySelector('#score');
+const gameOver = document.querySelector('#gameOver');
 
 
 /*Arrow function para ajustar o pulo do Mario*/
@@ -18,7 +20,7 @@ const loop = setInterval(()=>{
     //Mario position.
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
-    /*Consição (if) para verificar a posição do Maria em relação ao cano*/
+    /*Condição (if) para verificar a posição do Maria em relação ao cano*/
     if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 112){
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`;
@@ -37,3 +39,27 @@ const loop = setInterval(()=>{
 }, 10);
 
 document.addEventListener('keydown', jump);
+
+
+
+//Declaração de variáveis para o "Score"
+let interval = null;
+let playerScore = 0;//Contador
+
+//Função para o "Score".
+let scoreCounter = ()=>{
+    playerScore++;
+    score.innerHTML=`Score - <b>${playerScore}</b>`;
+} 
+
+//Start Game.
+window.addEventListener('keydown', (start)=>{
+    //Definindo o botão para iniciar o contador (playerScore).
+    if(start.code == 'Space'){
+        gameOver.style.display = "none";
+        pipe.classList.add("pipe");
+       
+        //Intervalo de adição de pontos no score.
+        interval = setInterval(scoreCounter, 150);
+    };
+});

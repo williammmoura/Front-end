@@ -1,0 +1,139 @@
+/********   Importando fonte do google fonts   ***********/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+/***********   Body da página HTML   ************/
+body{
+    background: #F27457;
+    font-family: "nunito";
+}
+
+/*********  Parte onde fica todo conteúdo   ***********/
+.frame{
+    position: absolute;
+    background-color: #002333;
+    top: 32.5%;
+    left: 47.5%;
+    width: 480px;
+    height: 653.25px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 15px;
+    box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.6);
+}
+
+
+.frame, .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**********   Vire-me   **********/
+.flip-me{
+    position: absolute;
+    top: 35%;
+    left: 81%;
+    font-size: 20px;
+    transform: rotate(-90deg);
+    color: rgba(235, 219, 219, 0.249);
+}
+
+/*h1 que está na classe "front"*/
+.front h1 {
+    font-family: Satisfy, cursive;
+    font-size: 128px;
+    margin: 16px 80px;
+    color: #DEEFE7;
+}
+
+/*********   Faz virar o card   ********/
+.card:hover .flip{
+    transform: rotateX(180deg) translate3d(0, 0, 0);
+}
+
+.flip{
+    transform-style: preserve-3d;
+    transition: all 0.7s ease-in-out;
+    perspective: 1000px;
+}
+
+.front, .back{
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background: #002333;
+}
+
+.card .back{
+    transform: rotateX(-180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*********   Parte de tras do "card"   **********/
+.back{
+    width: 480px;
+    height: 653.25px;
+    margin-top: -222px;
+    margin-left: -40px;
+    text-align: left;
+    border-radius: 15px;
+    box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*********   Conteúdo da classe "back"   **********/
+.back #foto_pessoa{
+    width: 120px;
+    margin-left: 55px;
+    margin-top: 48px;
+}
+.back #foto_logo{
+    width: 120px;;
+}
+.back h3{
+    color: #DEEFE7;
+    font-family: satisfy, cursive;
+    font-weight: 10;
+    font-size: 32px;
+    margin-left: 45px;
+}
+.back h2{
+    color: #DEEFE7;
+    font-size: 30px;
+    margin-left: 45px;
+    
+}
+.back p{
+    color: #DEEFE7;
+    margin-left: 45px;
+    margin-right: 45px;
+    text-align: justify;
+}
+.back strong{
+    color: #a2ff00;
+}
+
+/***********   Icones das redes   *************/
+.icons_redes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: var(--flex-alignment);
+    padding: 30px;
+    background-color: #03293d;
+}
+ul{
+    list-style: none;
+    margin-block-start: 60px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-size: 1.375em;
+    gap: 1.25rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.icons_redes img{
+    width: 50px;
+    margin-left: 35px;
+}

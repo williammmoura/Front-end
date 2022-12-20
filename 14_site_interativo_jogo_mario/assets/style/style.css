@@ -20,7 +20,7 @@
     bottom: 0;/*Deixa p cano fixado na base da página*/
     width: 80px;
     height: 112px;
-    animation: pipe-animation 1s infinite linear;
+    animation: pipe-animation 2s infinite linear;
 }
 @keyframes pipe-animation{
     from{
@@ -45,13 +45,13 @@
         bottom: 0;
     }
     40%{
-        bottom: 100px;
+        bottom: 160px;
     }
     50%{
-        bottom: 180px;
+        bottom: 200px;
     }
     60%{
-        bottom: 100px;
+        bottom: 160px;
     }
     100%{
         bottom: 0;
@@ -61,7 +61,7 @@
 .clouds{
     position: absolute;
     width: 550px;
-    animation: clouds-animation 20s infinite linear;
+    animation: clouds-animation 50s infinite linear;
 }
 @keyframes clouds-animation {
     from{
@@ -70,4 +70,27 @@
     to{
         right: 100%;
     }   
+}
+
+#score{
+    background-color: #e7ea04;
+    border: solid;
+    border-radius: 6px;
+    font-size: 20pt;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+
+#gameOver{
+    display: none;
+    position: absolute;
+    font-size: 70px;
+    left: calc(50% - 181px);
+    top: calc(50% - 40px);
+    width: 362px;
+    height: 80px;
+    color: #bbbb00;
 }
