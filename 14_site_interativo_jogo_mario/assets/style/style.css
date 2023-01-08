@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 /*Config. Gerais*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'VT323', monospace;
 }
 
 .game-board{
@@ -16,11 +22,11 @@
 }
 
 .pipe{
-    position: absolute;/**/
+    position: absolute; /*Faz com que uma imagem não interfira no comportamento de outra.*/
     bottom: 0;/*Deixa p cano fixado na base da página*/
     width: 80px;
-    height: 112px;
-    animation: pipe-animation 2s infinite linear;
+    height: 80px;
+    animation: pipe-animation 1.5s infinite linear;
 }
 @keyframes pipe-animation{
     from{
@@ -32,7 +38,7 @@
 }
 
 .mario{
-    position: absolute;
+    position: absolute;/*Faz com que uma imagem não interfira no comportamento de outra.*/
     bottom: 0;
     width: 150px;
 }
